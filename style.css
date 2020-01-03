@@ -100,3 +100,13 @@ li{
 #iznos{
     border: solid #4CAF50;
 }
+#iznosSaldo{
+    color: #4CAF50;
+    background-color: #ccc;
+    border: solid #4CAF50;
+    width: 30%;
+    height: 30px;
+    margin-left: 40%;
+    text-align: left;
+    padding-bottom: 5px;
+}
