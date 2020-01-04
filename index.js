@@ -7,6 +7,7 @@ var rashodiContainer = document.querySelector('#rashodiLista');
 var ulPrihodi = document.querySelector('#listaP')
 var ulRashodi = document.querySelector('#listaR')
 var iznosSaldo = document.querySelector('#iznosSaldo')
+var saldoUl = document.querySelector('#saldoUl')
 var total = 0;
 var totalR = 0;
 
@@ -37,7 +38,9 @@ dugme.addEventListener('click', function () {
     let saldoContent = document.createElement('li')
     saldoContent.textContent=razlika;
     
-    saldoContent.appendChild(iznosSaldo)
+    saldoUl.appendChild(saldoContent)
+    console.log(iznosSaldo)
+    console.log(saldoContent)
 });
 
 
