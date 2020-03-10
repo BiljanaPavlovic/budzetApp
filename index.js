@@ -10,6 +10,7 @@ var iznosSaldo = document.querySelector('#iznosSaldo')
 var saldoUl = document.querySelector('#saldoUl')
 var total = 0;
 var totalR = 0;
+let saldoContent = document.createElement('li')
 
 dugme.addEventListener('click', function () {
 
@@ -35,8 +36,7 @@ dugme.addEventListener('click', function () {
     console.log(totalR)
     let razlika = total - totalR;
     console.log(razlika)
-    let saldoContent = document.createElement('li')
-    saldoContent.textContent=razlika;
+    saldoContent.innerHTML=razlika;
     
     saldoUl.appendChild(saldoContent)
     console.log(iznosSaldo)
